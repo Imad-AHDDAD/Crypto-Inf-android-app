@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".presentation.coin.CoinActivity"
+    android:background="@color/dark_color"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/allCoinInformations"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/coinData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                app:layout_constraintTop_toTopOf="parent"
+                android:background="@color/white"
+                >
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imageCoin"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginEnd="5dp"
+                    android:src="@mipmap/ic_launcher"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/coinName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Coin Name"
+                    android:fontFamily="@font/montserrat"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/imageCoin"
+                    android:layout_marginStart="10dp"
+                    android:textSize="20sp"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    app:textAllCaps="true"
+                    android:textColor="@color/title_color"
+                    />
+
+                <TextView
+                    android:id="@+id/coinPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="Coin Price"
+                    android:fontFamily="@font/montserrat"
+                    app:layout_constraintTop_toBottomOf="@id/coinName"
+                    app:layout_constraintLeft_toRightOf="@id/imageCoin"
+                    android:layout_marginStart="10dp"
+                    android:textAlignment="center"
+                    />
+
+
+                <TextView
+                    android:id="@+id/coinLowPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/montserrat"
+                    app:layout_constraintTop_toBottomOf="@id/coinPrice"
+                    app:layout_constraintLeft_toRightOf="@id/imageCoin"
+                    android:layout_marginStart="10dp"
+                    android:text="Coin Low Price"
+                    />
+
+                <TextView
+                    android:id="@+id/coinHighPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/montserrat"
+                    app:layout_constraintTop_toBottomOf="@id/coinLowPrice"
+                    app:layout_constraintLeft_toRightOf="@id/imageCoin"
+                    android:layout_marginStart="10dp"
+                    android:text="Coin High Price"
+                    />
+
+                <TextView
+                    android:id="@+id/coinPricePercent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/montserrat"
+                    app:layout_constraintTop_toBottomOf="@id/coinHighPrice"
+                    app:layout_constraintLeft_toRightOf="@id/imageCoin"
+                    android:layout_marginStart="10dp"
+                    android:text="Coin Price Percent"
+                    />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/coinDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                app:layout_constraintTop_toBottomOf="@id/coinData"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:padding="20dp"
+                android:fontFamily="@font/montserrat"
+                android:text="Coin Description"
+                android:textAlignment="textStart"
+                android:textColor="@color/gray"
+                />
+
+
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/progressBarCoin"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
