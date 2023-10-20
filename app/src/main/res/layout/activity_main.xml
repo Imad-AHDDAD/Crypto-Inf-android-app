@@ -31,10 +31,12 @@
             android:inputType="text"
             android:scrollHorizontally="true"
             android:ellipsize="end"
-            android:textSize="14sp"
+            android:textSize="15sp"
             android:fontFamily="@font/montserrat"
             android:background="@color/gray"
             android:padding="5dp"
+            android:textColor="@color/text_color"
+            android:textColorHint="@color/text_color"
             />
 
         <LinearLayout
@@ -61,6 +63,7 @@
         android:layout_margin="15dp"
         app:flow_verticalAlign="center"
         app:flow_horizontalAlign="center"
+
         />
 
     <ImageButton

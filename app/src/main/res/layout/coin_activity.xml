@@ -60,6 +60,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="16sp"
+                    android:textColor="@color/text_color"
                     android:text="Coin Price"
                     android:fontFamily="@font/montserrat"
                     app:layout_constraintTop_toBottomOf="@id/coinName"
@@ -74,6 +75,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="16sp"
+                    android:textColor="@color/text_color"
                     android:fontFamily="@font/montserrat"
                     app:layout_constraintTop_toBottomOf="@id/coinPrice"
                     app:layout_constraintLeft_toRightOf="@id/imageCoin"
@@ -86,6 +88,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="16sp"
+                    android:textColor="@color/text_color"
                     android:fontFamily="@font/montserrat"
                     app:layout_constraintTop_toBottomOf="@id/coinLowPrice"
                     app:layout_constraintLeft_toRightOf="@id/imageCoin"
@@ -98,6 +101,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="16sp"
+                    android:textColor="@color/text_color"
                     android:fontFamily="@font/montserrat"
                     app:layout_constraintTop_toBottomOf="@id/coinHighPrice"
                     app:layout_constraintLeft_toRightOf="@id/imageCoin"
@@ -118,7 +122,7 @@
                 android:padding="20dp"
                 android:fontFamily="@font/montserrat"
                 android:text="Coin Description"
-                android:textAlignment="textStart"
+                android:justificationMode="inter_word"
                 android:textColor="@color/gray"
                 />
 
@@ -139,6 +143,7 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
+        android:visibility="gone"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

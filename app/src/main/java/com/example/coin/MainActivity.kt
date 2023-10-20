@@ -65,15 +65,19 @@ class MainActivity : AppCompatActivity(), OnQueryTextListener {
 
     private fun setUpRecyclerView() {
         adapter = CoinAdapter(this@MainActivity, ArrayList())
-        layoutManager = GridLayoutManager(this@MainActivity, 2)
+        layoutManager = GridLayoutManager(this@MainActivity, 2).apply {
+
+        }
         binding.coinRecyclerView.adapter = adapter
         binding.coinRecyclerView.layoutManager = layoutManager
+        /*
         binding.coinRecyclerView.addItemDecoration(
             DividerItemDecoration(
                 binding.coinRecyclerView.context,
                 (GridLayoutManager(this, 1)).orientation
             )
         )
+        */
         binding.coinRecyclerView.addOnScrollListener(object : RecyclerView.OnScrollListener() {
             override fun onScrollStateChanged(recyclerView: RecyclerView, newState: Int) {
                 super.onScrollStateChanged(recyclerView, newState)
